@@ -1,11 +1,13 @@
 ## This script can be used to run local colabfold ##
 ## Please go through the brief information about local colabfold given - https://wakeful-talk-e86.notion.site/local-ColabFold-72425fb5c373471db76a2a90b3158bde?pvs=4 ##
-## by OMG-10/04/2024 ##
+## OMG-10/04/2024 ##
 
 import os
+from pathlib import Path
 
 input_fasta = "./fasta_files" # specify path to the fasta/a3m file or provide a path to the directory containing fasta files 
-ouput_dir = "./output_models" # specify path to the output directory
+output_dir = "./output_models" # specify path to the output directory
+Path(output_dir).mkdir(parents=True, exist_ok=True)
 pair_mode = "unpaired_paired" # paired , unpaired , unpaired_paired
 msa_mode = "mmseqs2_uniref_env" # mmseqs2_uniref_env , mmseqs2_uniref , single_sequence
 custom_template_path = "None" # specify path to the directory containg the PDB files
@@ -23,7 +25,7 @@ num_relax = "1"
 os.system(
 'colabfold_batch '
 f'{input_fasta} '
-f'{ouput_dir} '
+f'{output_dir} '
 f'--pair-mode {pair_mode} '
 f'--msa-mode {msa_mode} '
 f'--num-recycle {num_recycle} '

@@ -1,8 +1,11 @@
 import os
 from pprint import pprint 
+from pathlib import Path
 
-fragments = './MreB_fragments.txt'
+fragments = './fragments.txt'
 savepath = './fasta_files'
+
+Path(savepath).mkdir(parents=True, exist_ok=True)
 
 all_lines = []
 with open(fragments) as f:
