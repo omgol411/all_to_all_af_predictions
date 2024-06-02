@@ -12,4 +12,4 @@
 - Jumper et al. "Highly accurate protein structure prediction with AlphaFold."
   Nature (2021) doi: [10.1038/s41586-021-03819-2](https://doi.org/10.1038/s41586-021-03819-2)
 - Evans et al. "Protein complex prediction with AlphaFold-Multimer."
-  BioRxiv (2022) doi: [10.1101/2021.10.04.463034v2](https://doi.org/10.1101/2021.10.04.463034v2)
+  BioRxiv (2022) doi: [10.1101/2021.10.04.463034](https://doi.org/10.1101/2021.10.04.463034)
